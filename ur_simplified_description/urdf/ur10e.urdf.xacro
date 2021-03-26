@@ -63,7 +63,7 @@
     <xacro:property name="base_correction" value="${pi}" />
 
     <link name="${prefix}base_link" >
-      <!-- put with shoulder_link <visual>
+      <visual>
         <origin xyz="0 0 0" rpy="0 0 ${base_correction}"/>
         <geometry>
           <mesh filename="package://ur_e_description/meshes/ur10e/visual/base.dae"/>
@@ -72,7 +72,7 @@
           <color rgba="0.7 0.7 0.7 1.0"/>
         </material>
       </visual>
-      <collision>
+     <!-- <collision>
         <origin xyz="0 0 0.05" rpy="0 0 0"/>
         <geometry>
           <cylinder length="0.1" radius="0.1"/>
