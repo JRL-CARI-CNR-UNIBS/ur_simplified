@@ -17,6 +17,9 @@
 
     Refer to 'inc/ur_macro.xacro' for more information.
   -->
-  <xacro:include filename="$(find ur_simplified_description)/urdf/ur10e/ur10e_macro.xacro"/>
-  <xacro:ur10e_robot prefix="" />
+  <xacro:include filename="$(find ur_description)/urdf/inc/ur10e_macro.xacro"/>
+  <xacro:ur10e_robot
+    prefix=""
+    visual_parameters_file='$(find ur_simplified_description)/config/ur10e/simplified_visual_parameters.yaml'
+   />
 </robot>
