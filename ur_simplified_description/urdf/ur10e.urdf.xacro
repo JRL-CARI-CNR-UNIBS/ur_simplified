@@ -73,7 +73,9 @@
         </material>
       </visual>
       <collision>
-            <!--   NO COLLISIONS  -->
+        <geometry>
+            <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
+        </geometry>
       </collision>
       <xacro:cylinder_inertial radius="0.075" length="0.038" mass="${base_mass}">
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
@@ -340,7 +342,9 @@
         <origin rpy="0 0 0" xyz="-0.01 0 0"/>
       </visual>
       <collision>
-            <!--   NO COLLISIONS  -->
+        <geometry>
+            <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
+        </geometry>
       </collision>
     </link>
 
