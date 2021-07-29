@@ -8,7 +8,7 @@ mesh_files:
         name: "LightGrey"
         color: "0.7 0.7 0.7 1.0"
     collision:
-      mesh: "" #NO COLLISIONS
+      mesh: "package://ur_simplified_description/meshes/ur10e/collision/base.STL"
 
   shoulder:
     visual:
